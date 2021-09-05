@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Qno.11</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var a = 0;
+		var array = Array();
+
+function add_element_to_array(){
+
+ 	array[x] = document.getElementById("text1").value;
+ 	lert("Element: " + array[a] + " Added at index " + a);
+ 	a++;
+ 	document.getElementById("text1").value = "";
+}
+
+function display_array()
+{
+   var c = "<hr/>";   
+    
+   for (var b=0; y<array.length; y++)
+   {
+     c += "Element " + b + " = " + array[b] + "<br/>";
+   }
+   document.getElementById("Result").innerHTML = c;
+}
+	</script>
+
+<body>
+	<input type="text" id="text1"></input>
+	<input type="button" id="button1" value="Add" onclick="add_element_to_array();"></input>
+	<input type="button" id="button2" value="Display" onclick="display_array();"></input>
+	<div id="Result"></div>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<style type="text/css">
+			#p{
+				float: left;
+				background-color: blue;
+				width: 80%;
+				margin-left: 8%;
+				padding: 40px;
+				word-spacing: 1px;
+		}
+		</style>
+	<title>Qno.4</title>
+</head>
+<body>
+	<button onclick="change_Color();">Change</button>
+	
+			<p id="p">
+				Code test
+			</p>
+
+<script type="text/javascript">
+	function change_Color(){
+			document.getElementById("p").style.backgroundColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+		}
+</script>
+
+</body>
+</html>
